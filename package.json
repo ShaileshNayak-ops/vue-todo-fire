@@ -1,0 +1,28 @@
+{
+  "homepage": "https://vue-todo-fire-1c614.web.app/",
+  "name": "vue-todo-fire",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "tailwind:dev": "tailwind -i src/assets/tailwind.css -o src/assets/build.css",
+    "tailwind:prod": "cross-env NODE_ENV=production tailwind -i src/assets/tailwind.css -o src/assets/build.css",
+    "predeploy": "npm run build",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "firebase": "^8.1.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15",
+    "vue": "^3.0.0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-vuex": "^4.5.13",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "cross-env": "^7.0.3"
+  }
+}
